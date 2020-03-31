@@ -1,4 +1,4 @@
-#　ShaderLab: Pass
+# ShaderLab: Pass
 
 [TOC]
 
@@ -6,7 +6,7 @@
 
 Pass块会导致一个游戏对象的几何图形被渲染一次。
 
-##　语法（Syntax）
+## 语法（Syntax）
 
 ```C++
 Pass { [Name and Tags] [RenderSetup] }
@@ -14,22 +14,22 @@ Pass { [Name and Tags] [RenderSetup] }
 
 基本的Pass命令包含一个呈现状态设置命令的列表。
 
-##　Name and tags
+## Name and tags
 
 Pass可以定义它的名称（Name)和任意数量的标记(Tags)。这里是指与Pass里驱动渲染引擎的通信用的字符串化的名称/值。
 
-##　Render state set-up
+## Render state set-up
 
 通过设置图形硬件的各种状态，比如是否应该开启alpha blending，或者是否应该使用深度测试。
 以下命令如下:
 
-###　Cull
+### Cull
 
 > Cull Back | Front | Off
 
 Set polygon culling mode.
 
-###　ZTest
+### ZTest
 
 > ZTest (Less | Greater | LEqual | GEqual | Equal | NotEqual | Always)
 >
@@ -39,7 +39,7 @@ Set polygon culling mode.
 
 设置深度缓冲测试模式。
 
-###　ZWrite
+### ZWrite
 
 > ZWrite On | Off
 
